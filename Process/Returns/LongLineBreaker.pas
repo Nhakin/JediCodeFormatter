@@ -66,8 +66,8 @@ uses
   SysUtils,
   { local }
   JcfStringUtils,
-  SourceToken, FormatFlags, JcfSettings, SetReturns,
-  TokenUtils, JcfMiscFunctions, Tokens, ParseTreeNodeType;
+  SourceToken, FormatFlags, SetReturns,
+  TokenUtils, JcfMiscFunctions, JcfSettings, Tokens, ParseTreeNodeType;
 
 function IsLineBreaker(const pcToken: TSourceToken): boolean;
 begin

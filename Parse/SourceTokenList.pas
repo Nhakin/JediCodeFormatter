@@ -105,7 +105,7 @@ implementation
 
 uses
   { delphi }
-  SysUtils, System.Classes,
+  SysUtils, Classes,
   { local }
   JcfMiscFunctions;
 

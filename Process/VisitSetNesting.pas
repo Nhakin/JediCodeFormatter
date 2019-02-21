@@ -62,7 +62,7 @@ implementation
 
 uses SysUtils,
   ParseTreeNode, ParseTreeNodeType,
-  Tokens, SourceToken, System.Classes;
+  Tokens, SourceToken, Classes;
 
 constructor TVisitSetNestings.Create;
 begin

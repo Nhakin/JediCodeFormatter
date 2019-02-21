@@ -47,7 +47,7 @@ See http://www.gnu.org/licenses/gpl.html
 
 interface
 
-uses Classes;
+uses SysUtils, Classes;
 
 function GetApplicationFolder: string;
 
@@ -75,12 +75,15 @@ function IncludeTrailingPathDelimiter(const psPath: string): string;
 function FileIsReadOnly(const psFile: string): boolean;
 {$ENDIF}
 
+{$IfNDef NewFormatSettings}
+Function FormatSettings() : TFormatSettings;
+{$EndIf}
 
 implementation
 
 uses
   { delphi }
-  SysUtils, Forms,
+  Forms,
   { local }
   JcfStringUtils;
 
@@ -117,13 +120,11 @@ end;
 
 // Like FloatToStr, but gives back a dot (.) as decimalseparator
 function Float2Str(const d: double): string;
-var
-  OrgSep: char;
+Var lFmt : TFormatSettings;
 begin
-  OrgSep := FormatSettings.DecimalSeparator;
-  FormatSettings.DecimalSeparator := '.';
-  Result := FloatToStr(d);
-  FormatSettings.DecimalSeparator := OrgSep;
+  lFmt := FormatSettings;
+  lFmt.DecimalSeparator := '.';
+  Result := FloatToStr(d, lFmt);
 end;
 
 
@@ -420,5 +421,12 @@ begin
 end;
 
 {$ENDIF}
+
+{$IfNDef NewFormatSettings}
+Function FormatSettings() : TFormatSettings;
+Begin
+  GetLocaleFormatSettings(0, Result);
+End;
+{$EndIf}
 
 end.

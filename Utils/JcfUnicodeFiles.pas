@@ -187,11 +187,15 @@ begin
   end;
 
   // convert to wide string
-  {$IFDEF DELPHI12}
-  Result := UTF8ToWideString(lsContents);
-  {$ELSE}
-  Result := UTF8ToWideString(lsContents);
-  {$ENDIF}
+  {$IFDEF DELPHI11}
+    Result := UTF8Decode(lsContents); 
+  {$Else}
+    {$IFDEF DELPHI12}
+    Result := UTF8ToWideString(lsContents);
+    {$ELSE}
+    Result := UTF8ToWideString(lsContents);
+    {$ENDIF}
+  {$EndIf}
 end;
 
 
