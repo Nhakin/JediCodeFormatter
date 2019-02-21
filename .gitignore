@@ -1,0 +1,8 @@
+__history
+/*.dcu
+/*.exe
+/*.dll
+/*.bpl
+/*.~bpl
+/*.~dsk
+Output
