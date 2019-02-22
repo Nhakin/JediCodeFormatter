@@ -1,2 +1,0 @@
-unit littletest12;interface function foo():string;implementation function foo():
-string;begin result:='Foo';end;end. 

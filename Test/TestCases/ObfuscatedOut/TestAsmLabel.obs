@@ -1,3 +1,0 @@
-unit testasmlabel;interface implementation procedure test;label lbl;asm
-lbl:mov eax,[eax+20h]
-end;end.

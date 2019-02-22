@@ -1,3 +1,0 @@
-unit littletest41;interface implementation procedure foo;begin asm
-cmp al,"'"
-end;end;end. 

@@ -6,19 +6,19 @@
         <Projects Include="JcfGui\XE10\jcfGui.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Notepad\D12\JcfNotepad.dproj">
+        <Projects Include="Notepad\XE10\JcfNotepad.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="CommandLine\D12\jcf.dproj">
+        <Projects Include="CommandLine\XE10\jcf.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Test\DUnit\D12\jcf_test.dproj">
+        <Projects Include="Test\DUnit\XE10\jcf_test.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="IdePlugin\D12\JCFIdeXE10.dproj">
+        <Projects Include="IdePlugin\XE10\JCFIdeXE10.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Test\TestCases\D12\TestCases.dproj">
+        <Projects Include="Test\TestCases\XE10\TestCases.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>

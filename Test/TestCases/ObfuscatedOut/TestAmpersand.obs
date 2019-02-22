@@ -1,3 +1,0 @@
-unit testampersand;interface implementation function tester(foo:integer):integer
-;begin result:=foo+3;end;procedure hiddenproc;var width:integer;begin width:=&testampersand
-.tester(500);end;end. 

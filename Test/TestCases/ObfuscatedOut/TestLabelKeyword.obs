@@ -1,2 +1,0 @@
-unit testlabelkeyword;interface uses system.windows.forms;type ttest=class(TObject
-)strict private lblinfo:system.windows.forms.label;end;implementation end. 
