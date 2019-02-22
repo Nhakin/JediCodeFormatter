@@ -1,2 +1,0 @@
-unit testincat;interface implementation procedure foo;var at:integer;begin at:=2
-;inc(at,2);end;end. 

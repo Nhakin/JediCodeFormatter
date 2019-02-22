@@ -1,2 +1,0 @@
-unit testvarargs;interface procedure print(x:pchar);cdecl;varargs;external'any.dll'
-name'print';implementation end. 

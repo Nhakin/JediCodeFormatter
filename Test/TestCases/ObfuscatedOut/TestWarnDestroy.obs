@@ -1,4 +1,0 @@
-unit testwarndestroy;interface type tfoo=class public destructor destroy;override
-;procedure testcreate;end;implementation destructor tfoo.destroy;begin inherited 
-destroy;end;procedure tfoo.testcreate;var lcfoo:tfoo;begin lcfoo:=tfoo.create;lcfoo
-.destroy;end;end. 
