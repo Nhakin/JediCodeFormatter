@@ -6,3 +6,6 @@ __history
 /*.~bpl
 /*.~dsk
 Output
+/*.obs
+/*.groupproj.local
+/*.tvsconfig
