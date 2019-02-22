@@ -86,7 +86,7 @@ function PreProcessorSymbolToString(const peSymbol: TPreProcessorSymbol): string
 
 implementation
 
-uses SysUtils, System.Classes;
+uses SysUtils, Classes;
 
 
 function PreProcessorSymbolToString(const peSymbol: TPreProcessorSymbol): string;

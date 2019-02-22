@@ -169,8 +169,8 @@ uses
 // define  CharInSet for Delphi 2007 or earlier
 function CharInSet(const C: Char; const testSet: TSysCharSet): boolean;
 begin
-  Result := Sysutils.CharInSet(C, testSet);
-  //Result :=  C in testSet; for older versions of delphi
+//  Result := Sysutils.CharInSet(C, testSet);
+  Result :=  C in testSet; //for older versions of delphi
 end;
 
 {$ENDIF}

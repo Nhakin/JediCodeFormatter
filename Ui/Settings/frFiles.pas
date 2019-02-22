@@ -59,7 +59,7 @@ uses
   { jcl }
   JclFileUtils,
   { local }
-  JcfRegistrySettings, JcfSettings;
+  JcfRegistrySettings, JcfSettings, JcfMiscFunctions;
 
 {$ifdef FPC}
   {$R *.lfm}
@@ -96,17 +96,17 @@ begin
 
     { from the file, about itself}
     lblDate.Caption    := 'Date file written: ' +
-      FormatDateTime(Sysutils.FormatSettings.ShortDateFormat + ' ' + Sysutils.FormatSettings.ShortTimeFormat,
-      FormatSettings.WriteDateTime);
-    lblVersion.Caption := 'Version that wrote this file: ' + FormatSettings.WriteVersion;
-    mDescription.Text  := FormatSettings.Description;
+      FormatDateTime(FormatSettings.ShortDateFormat + ' ' + FormatSettings.ShortTimeFormat,
+      JcfSettings.FormatSettings.WriteDateTime);
+    lblVersion.Caption := 'Version that wrote this file: ' + JcfSettings.FormatSettings.WriteVersion;
+    mDescription.Text  := JcfSettings.FormatSettings.Description;
 
   end;
 end;
 
 procedure TfFiles.Write;
 begin
-  FormatSettings.Description := mDescription.Text;
+  JcfSettings.FormatSettings.Description := mDescription.Text;
 end;
 
 procedure TfFiles.FrameResize(Sender: TObject);

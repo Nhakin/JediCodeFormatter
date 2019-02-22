@@ -149,7 +149,7 @@ type
 
 implementation
 
-uses SysUtils, Math, System.Types;
+uses SysUtils, Math, Types;
 
 constructor TParseTreeNode.Create;
 begin

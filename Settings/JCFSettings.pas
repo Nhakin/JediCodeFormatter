@@ -135,7 +135,7 @@ implementation
 
 uses
   { delphi }
-  {$IFNDEF FPC}Windows,{$ENDIF} SysUtils, Dialogs, System.UITypes,
+  {$IFNDEF FPC}Windows,{$ENDIF} SysUtils, Dialogs, {$IfDef DELPHI11}Types{$Else}System.UITypes{$EndIf},
   { local }
   JcfStringUtils,
   JCFSetBase,

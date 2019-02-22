@@ -113,7 +113,7 @@ implementation
 
 uses
   { delphi }
-  {$ifndef fpc}Windows, {$endif} SysUtils, Dialogs, Controls, Forms, System.UITypes,
+  {$ifndef fpc}Windows, {$endif} SysUtils, Dialogs, Controls, Forms, {$IfDef DELPHI11}Types{$Else}System.UITypes{$EndIf},
   { local }
   JcfStringUtils, JcfSystemUtils,
   JcfMiscFunctions, JcfLog,

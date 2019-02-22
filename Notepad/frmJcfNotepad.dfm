@@ -90,9 +90,6 @@ object fmJCFNotepad: TfmJCFNotepad
         Top = 0
         Width = 839
         Height = 529
-        AutoSize = False
-        MaxLines = 0
-        HideCaret = False
         Align = alClient
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
@@ -124,10 +121,7 @@ object fmJCFNotepad: TfmJCFNotepad
         Top = 20
         Width = 228
         Height = 109
-        AutoSize = False
         ClipboardCommands = [caCopy]
-        MaxLines = 0
-        HideCaret = False
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -18
@@ -147,10 +141,7 @@ object fmJCFNotepad: TfmJCFNotepad
         Top = 233
         Width = 228
         Height = 110
-        AutoSize = False
         ClipboardCommands = [caCopy]
-        MaxLines = 0
-        HideCaret = False
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -18
