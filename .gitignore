@@ -6,3 +6,4 @@ __history
 /*.~bpl
 /*.~dsk
 Output
+/Test/TestCases/*.obs

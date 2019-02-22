@@ -13,7 +13,7 @@ object FormTest: TFormTest
   Font.Style = []
   OldCreateOrder = False
   Scaled = False
-  PixelsPerInch = 120
+  PixelsPerInch = 96
   TextHeight = 20
   object bbClose: TBitBtn
     Left = 214

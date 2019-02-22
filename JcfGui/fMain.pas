@@ -42,7 +42,7 @@ uses
   FileConverter, JCFSettings,  ConvertTypes,
   frBasicSettings, JvMRUManager, JvFormPlacement,
   JvMemo, frDrop, frmBaseSettingsFrame, JvComponent, JvExStdCtrls,
-  JvComponentBase, System.Actions, System.ImageList;
+  JvComponentBase {$IfDef DELPHI11}{$Else}, Actions, ImageList{$EndIf};
 
 type
   TfrmMain = class(TForm)
@@ -134,7 +134,7 @@ implementation
 
 uses
   { deplhi }
-  Windows, System.UITypes,
+  Windows, {$IfDef Delphi26}UITypes{$Else}Types{$EndIf},
   { jcl }
   JclFileUtils,
   { local }
